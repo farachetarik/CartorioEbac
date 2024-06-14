@@ -128,7 +128,8 @@ int main() //Definindo Variáveis
 		printf("Escolha a opção desejada do Menu:\n\n");
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do sistema\n");
 		printf("Opção: "); //Fim do Menu
 	
 		scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -147,6 +148,11 @@ int main() //Definindo Variáveis
 			
 			case 3:
 			deletar(); //Chamada de funções
+			break;
+			
+			case 4:
+			printf("Saindo do sistema!");
+			return 0;
 			break;
 			
 			default:
